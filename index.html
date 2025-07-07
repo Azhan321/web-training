@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    header {
+      width: 100%;
+      background-color: #f50000;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .hero {
+      width: 100%;
+      text-align: center;
+      padding: 4rem 0;
+      background-color: #f9f9f9;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .hero .btn-primary {
+      margin-top: 1rem;
+    }
+
+    .hero-images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-images img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .about {
+      width: 100%;
+      padding: 4rem 0;
+      background: #fafafa;
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .stat {
+      flex: 1 1 150px;
+      text-align: center;
+    }
+
+    .stat h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #000;
+    }
+
+    .stat p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+
+      .about h2 {
+        font-size: 1.5rem;
+      }
+
+      nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-images img {
+        width: 100%;
+        height: 120px;
+      }
+
+      .stats {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius maxime perspiciatis neque ex minus itaque quae nesciunt, praesentium saepe cumque ipsum.</h1>
+  <header>
+    <div class="container header-container">
+      <div class="logo">Business Name</div>
+      <nav>
+        <a href="#">About</a>
+        <a href="#">Product</a>
+        <a href="#">Resources</a>
+        <button class="btn-primary">Get Started</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Add the Title Text Here</h1>
+      <p>This is a space to welcome visitors to the site. Grab their attention with copy that clearly states what the site is about, and add an engaging image or video.</p>
+      <button class="btn-primary">Get Started</button>
+      <div class="hero-images">
+        <img src="https://via.placeholder.com/200x150" alt="Image 1" />
+        <img src="https://via.placeholder.com/200x200" alt="Image 2" style="height: 200px;" />
+        <img src="https://via.placeholder.com/200x150" alt="Image 3" />
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>This is the space to introduce visitors to the business or brand. Briefly explain who it benefits, what it does and what makes it unique. Share its core values and what this site has to offer.</p>
+      <div class="stats">
+        <div class="stat">
+          <h3>10k</h3>
+          <p>Use this space to promote the business, its products or its services.</p>
+        </div>
+        <div class="stat">
+          <h3>250</h3>
+          <p>Use this space to promote the business, its products or its services.</p>
+        </div>
+        <div class="stat">
+          <h3>3k</h3>
+          <p>Use this space to promote the business, its products or its services.</p>
+        </div>
+        <div class="stat">
+          <h3>+45%</h3>
+          <p>Use this space to promote the business, its products or its services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
