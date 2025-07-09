@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help Center</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+    .sub{
+        background-color: #6c3fc5;
+       color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      padding: 5px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      border: 2px solid white;
+    }
+
+    /* Top Navbar */
+    .topbar {
+      background-color: #000;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .topbar .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .topbar .menu a {
+       background-color: #006aff;
+       color: #fff;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      padding: 5px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      border: 2px solid white;
+    }
+
+    .topbar .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .hero {
+      background-color: #e7ddf7;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero input {
+      padding: 0.6rem 1rem;
+      width: 90%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    /* Card Grid */
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .card a {
+      color: #6c3fc5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #000;
+      color: #fff;
+      padding: 3rem 1rem;
+      font-size: 14px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-grid h3 {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .footer-grid ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-grid li {
+      margin-bottom: 0.5rem;
+      color: #ccc;
+      cursor: pointer;
+    }
+
+    .footer-grid li:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      color: #999;
+      font-size: 12px;
+    }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Black Bar -->
+  <div class="topbar">
+    <div class="logo">Abstract | Help Center</div>
+    
+    <div class="menu">
+        <button class="sub">Submit a Request</button>
+      <a href="#">Sign In</a>
+    </div>
+    
+  </div>
+
+  <!-- Header -->
+  <section class="hero">
+    <h1>How can we help?</h1>
+    <input type="text" placeholder="Search">
+  </section>
+
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <h2>Branches</h2>
+      <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="card">
+      <h2>Manage your account</h2>
+      <p>Configure your account settings, such as your email, profile details, and password.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="card">
+      <h2>Manage organizations, teams, and projects</h2>
+      <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="card">
+      <h2>Manage billing</h2>
+      <p>Change subscriptions and payment details.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="card">
+      <h2>Authenticate to Abstract</h2>
+      <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+      <a href="#">Learn More →</a>
+    </div>
+    <div class="card">
+      <h2>Abstract support</h2>
+      <p>Get in touch with a human.</p>
+      <a href="#">Learn More →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>Abstract</h3>
+        <ul><li>Branches</li></ul>
+      </div>
+      <div>
+        <h3>Resources</h3>
+        <ul>
+          <li>Help Center</li>
+          <li>Blog</li>
+          <li>Release Notes</li>
+          <li>Status</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Community</h3>
+        <ul>
+          <li>Twitter</li>
+          <li>LinkedIn</li>
+          <li>Facebook</li>
+          <li>Podcast</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Legal</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">© Copyright 2022 Abstract Studio Design, Inc. All rights reserved</p>
+  </footer>
+
+</body>
+</html>
