@@ -7,18 +7,29 @@
 //   }
 // }
 
-console.log("Largest number is:", largest); // 100
-let numbers = [0,2, 7, 4, 9, 12, 5];
-let evenCount = 0;
-let oddCount = 0;
+// console.log("Largest number is:", largest); // 100
+// let numbers = [0,2, 7, 4, 9, 12, 5];
+// let evenCount = 0;
+// let oddCount = 0;
 
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 2 === 0) {
-    evenCount++;
-  }else{
-    oddCount++;
-  }
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 2 === 0) {
+//     evenCount++;
+//   }else{
+//     oddCount++;
+//   }
+// }
+
+// console.log("Even numbers count:", evenCount);
+// console.log("Odd numbers count:", oddCount);
+
+let myMap = new Map();
+myMap.set("name","ali");
+myMap.set("age",12);
+myMap.set("city","lahore");
+console.log(myMap.get("name"));
+
+let string = "pakistan";
+for(let char of string){
+  console.log(char);
 }
-
-console.log("Even numbers count:", evenCount);
-console.log("Odd numbers count:", oddCount);
