@@ -53,6 +53,22 @@ async function showData() {
 }
 
 showData();
+function simulateNetworkRequest() {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve("Success: Data received after 2s");
+    }, 2000);
+  });
+}
+
+async function runDemo() {
+  console.log("Start fetching...");
+  const response = await simulateNetworkRequest();
+  console.log(response);
+}
+
+runDemo();
+
 
 
 
